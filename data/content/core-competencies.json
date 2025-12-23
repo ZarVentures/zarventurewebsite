@@ -1,0 +1,61 @@
+{
+  "title": "Joint Venture Partner",
+  "heroImage": "/modern-real-estate-office.png",
+  "companyOverview": {
+    "title": "Company Overview",
+    "description": "Zar Ventures is a diversified real estate investment, development, management and project execution company specializing in joint ventures with RERA registered developers, large project owners and landowners. We partner with reputed builders to unlock project value through structured capital engineering oversights.",
+    "image": "/professional-business-man-ceo.jpg"
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "JV Structuring & Capital Participation",
+      "icon": "Building2",
+      "items": [
+        "Equity/debt revenue sharing JV models",
+        "Capital infusion at land approvals construction or sales stage",
+        "End-to-end project execution monitoring",
+        "Milestone-based governance and reporting"
+      ],
+      "image": "/luxury-building-construction.jpg",
+      "imagePosition": "right"
+    },
+    {
+      "id": 2,
+      "title": "Development Management (DM)",
+      "icon": "TrendingUp",
+      "items": [
+        "Feasibility, project planning and DPR preparation",
+        "RERA registration online procurement and cost monitoring",
+        "Time-bound execution and MIS reporting"
+      ],
+      "image": "/real-estate-market-analysis.jpg",
+      "imagePosition": "left"
+    },
+    {
+      "id": 3,
+      "title": "Sales Marketing and CRM Operations",
+      "icon": "Target",
+      "items": [
+        "Project branding launch strategy & Digital marketing",
+        "Strong channel partner network activation",
+        "Inventory mapping, pricing strategy and collection management"
+      ],
+      "image": "/professional-business-woman-marketing.jpg",
+      "imagePosition": "right"
+    },
+    {
+      "id": 4,
+      "title": "Land Regulatory Support",
+      "icon": "FileCheck",
+      "items": [
+        "Land identification, Due diligence & consolidation",
+        "Liaison for NOCs, approvals & authority coordination",
+        "Legal guidance through empaneled consultants"
+      ],
+      "image": "/elegant-townhouse.jpg",
+      "imagePosition": "left"
+    }
+  ]
+}
+

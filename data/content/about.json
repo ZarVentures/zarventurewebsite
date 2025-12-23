@@ -1,0 +1,38 @@
+{
+  "title": "About Zar Ventures",
+  "intro": {
+    "paragraphs": [
+      "Zar Ventures Put. Ltd. is a multidisciplinary real estate enterprise with over 15 years of expertise across development land aggregation, project planning, design, and construction management. Built on a foundation of integrity, innovation, and long-term vision. Zar Ventures has evolved into a trusted name delivering value driven solutions for developers, investors, and landowners.",
+      "Our journey began as a real estate development and construction company, executing residential and commercial projects with strong focus on quality delivery. Over the years, we expanded into land aggregation, identifying high-potential land parcels, securing clear titles, and facilitating large-scale transactions for builders, industrial clients, and investors."
+    ],
+    "servicesTitle": "Our Services",
+    "services": [
+      "Real Estate Development.",
+      "Land Aggregation & Acquisition",
+      "Project Design, Layout Planning & Feasibility",
+      "Construction & Site Execution",
+      "Sales, Marketing & Channel Partner Networks",
+      "Project Branding & Market Positioning",
+      "Corporate & Investor Relations"
+    ],
+    "closingParagraph": "Our strong relationships with reputable developers, landowners, authorities, and market stakeholders enable us to create sustainable business ecosystems and high-value opportunities."
+  },
+  "missionVisionValues": {
+    "title": "Mission, Vision & Values",
+    "items": [
+      {
+        "title": "Our Mission",
+        "description": "To provide exceptional real estate solutions that exceed client expectations through innovation, integrity, and personalized service. We strive to make property ownership accessible and rewarding for everyone."
+      },
+      {
+        "title": "Our Vision",
+        "description": "To be the most trusted and preferred real estate company, recognized for setting industry standards in quality, sustainability, and customer satisfaction. We envision communities that inspire and endure."
+      },
+      {
+        "title": "Our Values",
+        "description": "Integrity, Excellence, Innovation, Customer Focus, and Sustainability. These core values guide every decision we make and every relationship we build, ensuring we deliver on our promises."
+      }
+    ]
+  }
+}
+

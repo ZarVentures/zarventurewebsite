@@ -1,0 +1,197 @@
+{
+  "title": "International Realty",
+  "heroImage": "/luxury-modern-residential-building-exterior.jpg",
+  "subtitle": "Investing in International Real Estate — From India with Confidence",
+  "description": "Zar Ventures helps Indian investors seamlessly buy, invest, and manage properties in Global Properties, with complete regulatory, legal, and compliance support — all from India.",
+  "highlights": [
+    "👉 High returns",
+    "Income tax friendly",
+    "Global asset ownership"
+  ],
+  "services": [
+    "Buying assistance",
+    "Selling services",
+    "Renting & leasing services",
+    "Property management",
+    "Investment advisory",
+    "Legal & documentation support"
+  ],
+  "trustedPartner": {
+    "title": "Your Trusted Partner in Real Estate",
+    "description": "We are a full-service real estate consultancy committed to delivering transparent, reliable, and result-oriented property solutions. Whether you are buying, selling, renting, or investing, our expert-driven approach ensures smooth transactions and long-term value."
+  },
+  "serviceSections": [
+    {
+      "id": 1,
+      "title": "Buying Assistance",
+      "icon": "Home",
+      "tagline": "Find the right property with confidence.",
+      "description": "We guide you at every step of your property-buying journey, ensuring informed decisions and hassle-free execution.",
+      "items": [
+        "Requirement-based property shortlisting (residential & commercial)",
+        "Access to verified and high-potential properties",
+        "Site visit coordination and market comparisons",
+        "Price negotiation and deal structuring",
+        "End-to-end support till possession"
+      ],
+      "benefits": [
+        "Expert guidance",
+        "Transparent process",
+        "Best value deals"
+      ],
+      "image": "/elegant-townhouse.jpg",
+      "imagePosition": "right"
+    },
+    {
+      "id": 2,
+      "title": "Selling Services",
+      "icon": "TrendingUp",
+      "tagline": "Sell your property faster and at the right price.",
+      "description": "We combine market intelligence with strategic marketing to help you achieve maximum returns.",
+      "items": [
+        "Accurate market-driven property valuation",
+        "Professional listings and targeted promotions",
+        "Buyer screening and site visit management",
+        "Negotiation support and closure assistance",
+        "Complete transaction coordination"
+      ],
+      "benefits": [
+        "Faster closures",
+        "Maximum price realization",
+        "Zero stress selling"
+      ],
+      "image": "/luxury-villa-exterior.png",
+      "imagePosition": "left"
+    },
+    {
+      "id": 3,
+      "title": "Renting & Leasing Services",
+      "icon": "Key",
+      "tagline": "Connecting the right tenants with the right properties.",
+      "description": "We ensure reliable tenants and smooth leasing for property owners, while helping tenants find ideal spaces.",
+      "items": [
+        "Tenant requirement analysis and matching",
+        "Verified tenant sourcing and background checks",
+        "Rental value assessment and negotiation",
+        "Lease agreement coordination",
+        "Smooth handover and move-in support"
+      ],
+      "benefits": [
+        "Trusted tenants",
+        "Competitive rentals",
+        "Quick turnaround"
+      ],
+      "image": "/modern-apartment.png",
+      "imagePosition": "right"
+    },
+    {
+      "id": 4,
+      "title": "Property Management",
+      "icon": "Building2",
+      "tagline": "Complete peace of mind for property owners.",
+      "description": "We manage your property as if it were our own, ensuring consistent returns and proper upkeep.",
+      "items": [
+        "Tenant coordination and issue resolution",
+        "Rent collection and payment follow-ups",
+        "Maintenance and vendor management",
+        "Periodic inspections and reporting",
+        "Ideal for absentee and NRI owners"
+      ],
+      "benefits": [
+        "Stress-free ownership",
+        "Well-maintained assets",
+        "Reliable income"
+      ],
+      "image": "/modern-real-estate-office.png",
+      "imagePosition": "left"
+    },
+    {
+      "id": 5,
+      "title": "Investment Advisory",
+      "icon": "BarChart3",
+      "tagline": "Smart investments backed by market insights.",
+      "description": "We help you identify high-growth opportunities aligned with your financial goals.",
+      "items": [
+        "Market trend and location growth analysis",
+        "Residential and commercial investment planning",
+        "ROI and rental yield evaluation",
+        "Risk assessment and exit strategy planning",
+        "Portfolio diversification guidance"
+      ],
+      "benefits": [
+        "Higher returns",
+        "Reduced risk",
+        "Data-driven decisions"
+      ],
+      "image": "/real-estate-market-analysis.jpg",
+      "imagePosition": "right"
+    },
+    {
+      "id": 6,
+      "title": "Legal & Documentation Support",
+      "icon": "FileCheck",
+      "tagline": "Secure, compliant, and transparent transactions.",
+      "description": "We ensure all legal and documentation aspects are handled with precision and care.",
+      "items": [
+        "Title verification and due diligence support",
+        "Sale deed, lease deed, and agreement coordination",
+        "Registration and compliance guidance",
+        "Liaison with legal experts and authorities",
+        "End-to-end documentation management"
+      ],
+      "benefits": [
+        "Legal peace of mind",
+        "Error-free documentation",
+        "Secure transactions"
+      ],
+      "image": "/professional-business-man-ceo.jpg",
+      "imagePosition": "left"
+    }
+  ],
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "items": [
+      "Customer-first approach",
+      "Transparent and ethical dealings",
+      "Strong local market expertise",
+      "End-to-end real estate solutions",
+      "Trusted by buyers, sellers, and investors"
+    ]
+  },
+  "investmentProcess": {
+    "title": "How the Investment Process Works",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Consultation",
+        "description": "Understand your budget and investment goals",
+        "icon": "MessageSquare"
+      },
+      {
+        "number": 2,
+        "title": "Property Selection",
+        "description": "Shortlisted Dubai projects shared with insights",
+        "icon": "Search"
+      },
+      {
+        "number": 3,
+        "title": "Compliance & Payments",
+        "description": "LRS-compliant fund transfer assistance",
+        "icon": "CreditCard"
+      },
+      {
+        "number": 4,
+        "title": "Booking & Registration",
+        "description": "DLD registration and ownership transfer",
+        "icon": "FileText"
+      },
+      {
+        "number": 5,
+        "title": "Post-Purchase Support",
+        "description": "Rental, resale, or management services",
+        "icon": "Headphones"
+      }
+    ]
+  }
+}
+

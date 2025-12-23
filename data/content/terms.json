@@ -1,0 +1,120 @@
+{
+  "title": "Terms & Conditions",
+  "effectiveDate": "[01 Jan 2026]",
+  "intro": {
+    "paragraphs": [
+      "Welcome to Zar Venture Real Estate (\"Company\", \"we\", \"our\", \"us\"). By accessing or using our website, services, or submitting enquiries, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully.",
+      "If you do not agree with these Terms & Conditions, you should not use our website or services."
+    ]
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "Scope of Services",
+      "content": "Zar Venture Real Estate provides real estate consultancy and facilitation services including, but not limited to:",
+      "items": [
+        "Buying, selling, renting, and leasing of properties in India and Dubai (UAE)",
+        "Investment advisory and market guidance",
+        "Property management support",
+        "Regulatory, legal, and documentation coordination through third-party professionals"
+      ],
+      "additionalContent": "We act as consultants and facilitators and do not provide legal, tax, or financial advisory services unless explicitly stated."
+    },
+    {
+      "id": 2,
+      "title": "User Eligibility",
+      "content": "By using our website or services, you confirm that:",
+      "items": [
+        "You are at least 18 years of age",
+        "You are legally capable of entering into binding agreements",
+        "The information provided by you is accurate and complete"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Information Accuracy",
+      "content": "While we make reasonable efforts to ensure the accuracy of property information, pricing, layouts, approvals, and availability:",
+      "items": [
+        "All property details are subject to change by developers, sellers, or authorities without prior notice",
+        "Visuals, brochures, and representations are indicative in nature",
+        "Final decisions should be made after independent verification and due diligence"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Third-Party Associations",
+      "content": "We may work with developers, channel partners, banks, legal professionals, and service providers. Zar Venture Real Estate is not responsible for:",
+      "items": [
+        "Actions, omissions, or services provided by third parties",
+        "Delays caused due to banks, government authorities, or developers",
+        "Changes in regulations or policies affecting transactions"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "No Guarantee of Returns",
+      "content": "Any information related to rental yield, appreciation, or investment returns is indicative and market-based. We do not guarantee:",
+      "items": [
+        "Fixed returns",
+        "Capital appreciation",
+        "Rental income"
+      ],
+      "additionalContent": "Real estate investments are subject to market risks."
+    },
+    {
+      "id": 6,
+      "title": "Client Responsibilities",
+      "content": "Clients agree to:",
+      "items": [
+        "Provide accurate and complete documentation",
+        "Comply with applicable laws including FEMA, RBI (LRS), Income Tax, RERA, and UAE regulations",
+        "Seek independent legal, tax, and financial advice where required"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Fees and Payments",
+      "items": [
+        "Service fees, brokerage, or consultancy charges (if applicable) will be communicated separately",
+        "Payments must be made as per agreed terms",
+        "Government charges, taxes, stamp duty, registration fees, and developer charges are payable directly by the client"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Intellectual Property",
+      "content": "All content on this website, including text, logos, images, layouts, and branding, is the intellectual property of Zar Venture Real Estate and may not be copied, reproduced, or used without prior written consent."
+    },
+    {
+      "id": 9,
+      "title": "Limitation of Liability",
+      "content": "To the maximum extent permitted by law, Zar Venture Real Estate shall not be liable for:",
+      "items": [
+        "Any direct, indirect, incidental, or consequential losses",
+        "Loss arising from reliance on website information",
+        "Delays, cancellations, or regulatory changes beyond our control"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Termination of Services",
+      "content": "We reserve the right to suspend or terminate services if:",
+      "items": [
+        "False or misleading information is provided",
+        "There is misuse of the website or services",
+        "Legal or regulatory compliance is violated"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Governing Law and Jurisdiction",
+      "content": "These Terms & Conditions shall be governed by and construed in accordance with the laws of India. Courts located in India shall have exclusive jurisdiction, unless otherwise agreed in writing."
+    },
+    {
+      "id": 12,
+      "title": "Changes to Terms",
+      "content": "We reserve the right to modify these Terms & Conditions at any time. Updated terms will be posted on this page with a revised effective date."
+    }
+  ]
+}
+

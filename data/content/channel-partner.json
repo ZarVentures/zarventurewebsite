@@ -1,0 +1,70 @@
+{
+  "title": "Collaboration Model",
+  "heroImage": "/professional-business-man-sales.jpg",
+  "intro": {
+    "title": "Our Collaboration Proposal",
+    "description": "To ensure a smooth, transparent and result oriented Collaboration, we request the following structured support from your esteemed organization."
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "Letter of Authorization (LOA)",
+      "icon": "FileText",
+      "description": "A formal authorization allowing Zar Ventures Pvt Ltd to:",
+      "items": [
+        "Represent your company professionally",
+        "Use project information for marketing",
+        "Conduct presentation on website, social media & ads"
+      ],
+      "image": "/professional-man-portrait.png",
+      "imagePosition": "right"
+    },
+    {
+      "id": 2,
+      "title": "Regular Project Update",
+      "icon": "TrendingUp",
+      "description": "Provide timely updates:",
+      "items": [
+        "Construction progress",
+        "New launches and phases",
+        "RERA approvals",
+        "Updated price lists & sold-out units"
+      ],
+      "image": "/Gemini_Generated_Image_8aroxr8aroxr8aro.png",
+      "imagePosition": "left"
+    },
+    {
+      "id": 3,
+      "title": "Designated Contact Person",
+      "icon": "UserCheck",
+      "description": "Assign a dedicated staff member who can assist with:",
+      "items": [
+        "Updated inventory status",
+        "Pricing, offer & availability",
+        "Booking confirmation and Documentation"
+      ],
+      "image": "/professional-business-woman-executive.jpg",
+      "imagePosition": "right"
+    },
+    {
+      "id": 4,
+      "title": "Site Visit Support",
+      "icon": "MapPin",
+      "description": "Ensure smooth coordination for:",
+      "items": [
+        "Customer site visit",
+        "Access to sample units/ site offices",
+        "Walk-through for channel partners"
+      ],
+      "image": "/luxury-modern-residential-building-exterior.jpg",
+      "imagePosition": "left"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Partner With Us?",
+    "description": "Let's build a successful partnership together. Contact us to learn more about our channel partner program.",
+    "buttonText": "Get In Touch",
+    "link": "/contact"
+  }
+}
+

@@ -1,0 +1,68 @@
+{
+  "title": "Channel Partner Program",
+  "intro": "Zar Ventures invites local professionals and firms across Chhattisgarh to partner with us as Channel Partners and represent our real estate projects within their respective regions on a purely commission-based model.",
+  "sections": [
+    {
+      "id": 1,
+      "title": "Project Collaboration",
+      "items": [
+        "Zar Ventures will share approved and active projects under collaboration",
+        "Projects will include residential, commercial, and plotted developments",
+        "Detailed project information, pricing, and inventory will be provided",
+        "Marketing collateral and sales guidelines will be shared for promotion",
+        "Partners will represent Zar Ventures projects within their assigned territory"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Customer Sourcing & Local Representation",
+      "items": [
+        "Channel Partners will generate customer leads from their local area",
+        "Act as the first point of contact for potential buyers",
+        "Conduct initial discussions and site visit coordination",
+        "Support customers through inquiry, booking, and follow-up stages",
+        "Maintain ethical selling and transparent communication"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Commission-Based Engagement",
+      "items": [
+        "Partnership will operate on a purely commission-based structure",
+        "Commission will be linked to successful bookings and collections",
+        "Clear commission slabs defined per project",
+        "Timely and transparent commission disbursement",
+        "No fixed fees, retainers, or employment obligations"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Roles, Responsibilities & Compliance",
+      "items": [
+        "Follow Zar Ventures' sales processes and branding guidelines",
+        "Adhere to RERA regulations and local compliance requirements",
+        "Share accurate customer and transaction information",
+        "Maintain professionalism and brand reputation",
+        "Avoid misrepresentation or unauthorized commitments"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Support & Growth Enablement",
+      "items": [
+        "Regular project updates and inventory status sharing",
+        "Sales training and product knowledge sessions",
+        "Dedicated coordination support from Zar Ventures team",
+        "Performance tracking and feedback mechanism",
+        "Opportunity to scale across multiple projects and regions"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Ready to Become a Channel Partner?",
+    "description": "Join us and grow your real estate business. Contact us to learn more about our Channel Partner Program.",
+    "buttonText": "Get In Touch",
+    "link": "/contact"
+  }
+}
+

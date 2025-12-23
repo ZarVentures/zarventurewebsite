@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "description": "We're here to help you find your perfect property. Reach out to us through any of our offices or send us a message."
+  },
+  "contactInfo": {
+    "title": "Get In Touch",
+    "email": {
+      "label": "Email",
+      "value": "Info.zarventures@gmail.com",
+      "href": "mailto:Info.zarventures@gmail.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "numbers": [
+        {
+          "value": "+91 7247248886",
+          "href": "tel:+917247248886"
+        },
+        {
+          "value": "+91 7247248887",
+          "href": "tel:+917247248887"
+        }
+      ]
+    }
+  },
+  "officeLocations": {
+    "title": "Our Office Locations",
+    "offices": [
+      {
+        "name": "Head Office - Raipur",
+        "addressLines": [
+          "4049, 4th Floor, Currency Tower",
+          "VIP Road, Raipur",
+          "Chhattisgarh",
+          "Pin - 492001"
+        ]
+      },
+      {
+        "name": "Bhilai Office",
+        "addressLines": [
+          "241-242, First Floor, Chouhan Estate",
+          "Supela, Bhilai Nagar",
+          "Chhattisgarh",
+          "Pin - 490023"
+        ]
+      },
+      {
+        "name": "Korba Office",
+        "addressLines": [
+          "Shine Public School",
+          "344/3 Power Imperial Road, Korba",
+          "Chhattisgarh",
+          "Pin - 496777"
+        ]
+      },
+      {
+        "name": "Jashpur Office",
+        "addressLines": [
+          "Darbari Toli, Jashpurnagar",
+          "Jashpur",
+          "Chhattisgarh",
+          "Pin - 496331"
+        ]
+      }
+    ]
+  },
+  "contactForm": {
+    "title": "Send Us A Message",
+    "connectTitle": "Connect With Us"
+  }
+}
+

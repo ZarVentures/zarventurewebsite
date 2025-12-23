@@ -1,0 +1,94 @@
+{
+  "title": "RERA Developers & Landowners",
+  "heroImage": "/luxury-building-construction.jpg",
+  "intro": "Zar Ventures partners with RERA-registered developers and landowners to unlock project potential through structured joint ventures, disciplined capital participation, and professional development management. We bring capital, planning, governance, and execution oversight to transform land and projects into high-performing real estate assets.",
+  "sections": [
+    {
+      "id": 1,
+      "title": "Capital Participation & Financial Engineering",
+      "icon": "DollarSign",
+      "subtitle": "Capital infusion at strategic stages:",
+      "items": [
+        "Land acquisition and approvals",
+        "Pre-construction and construction",
+        "Sales and monetization phases"
+      ],
+      "additionalItems": [
+        "Risk-mitigated funding frameworks with milestone-linked disbursements"
+      ],
+      "image": "/professional-woman-portrait.png",
+      "imagePosition": "right"
+    },
+    {
+      "id": 2,
+      "title": "Project Feasibility & Planning",
+      "icon": "ClipboardCheck",
+      "items": [
+        "Market and demand assessment",
+        "Financial feasibility, ROI, and IRR analysis",
+        "Preparation of DPR (Detailed Project Reports)",
+        "Product mix, pricing, and phase-wise launch planning"
+      ],
+      "image": "/professional-woman-portrait-2.png",
+      "imagePosition": "left"
+    },
+    {
+      "id": 3,
+      "title": "Development Management & Execution Oversight",
+      "icon": "Building2",
+      "items": [
+        "End-to-end development management under JV structures",
+        "Time-bound execution monitoring and milestone tracking",
+        "Cost budgeting, procurement oversight, and margin protection",
+        "Coordination with architects, consultants, contractors, and vendors"
+      ],
+      "image": "/luxury-villa-exterior.png",
+      "imagePosition": "right"
+    },
+    {
+      "id": 4,
+      "title": "Regulatory, RERA & Statutory Compliance",
+      "icon": "Shield",
+      "items": [
+        "End-to-end RERA registration and ongoing compliance management",
+        "Coordination for statutory approvals and documentation",
+        "Transparency and reporting aligned with regulatory norms"
+      ],
+      "image": "/placeholder.jpg",
+      "imagePosition": "left"
+    },
+    {
+      "id": 5,
+      "title": "Sales, Marketing & Monetization Strategy",
+      "icon": "Target",
+      "items": [
+        "Go-to-market and launch strategy planning",
+        "Sales velocity monitoring and inventory optimization",
+        "Revenue tracking and cash flow alignment with JV commitments",
+        "Support in channel partner alignment and buyer engagement"
+      ],
+      "image": "/professional-business-woman-marketing.jpg",
+      "imagePosition": "right"
+    },
+    {
+      "id": 6,
+      "title": "Governance, MIS & Investor Reporting",
+      "icon": "BarChart3",
+      "items": [
+        "Robust governance framework for JV projects",
+        "Regular MIS and performance reporting",
+        "Early identification of risks, dependencies, and corrective actions",
+        "Clear visibility for all stakeholders throughout the project lifecycle"
+      ],
+      "image": "/professional-business-man-ceo.jpg",
+      "imagePosition": "left"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Partner With Us?",
+    "description": "Let's unlock the potential of your land and projects together. Contact us to explore partnership opportunities.",
+    "buttonText": "Get In Touch",
+    "link": "/contact"
+  }
+}
+

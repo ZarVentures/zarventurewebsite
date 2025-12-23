@@ -1,0 +1,110 @@
+{
+  "title": "Frequently Asked Questions",
+  "sections": [
+    {
+      "id": "core-competencies",
+      "title": "Core Competencies",
+      "faqs": [
+        {
+          "question": "What are the core strengths of Zar Ventures?",
+          "answer": "Zar Ventures specializes in real estate joint ventures, capital structuring, development management, and execution oversight, ensuring value creation, risk mitigation, and timely project delivery."
+        },
+        {
+          "question": "Does Zar Ventures work only with RERA-registered developers?",
+          "answer": "Yes. We collaborate exclusively with RERA-registered developers and compliant projects to ensure transparency, regulatory adherence, and buyer confidence."
+        },
+        {
+          "question": "What type of projects does Zar Ventures handle?",
+          "answer": "We work across residential, commercial, mixed-use, and plotted developments, depending on project feasibility, market demand, and partner alignment."
+        },
+        {
+          "question": "How does Zar Ventures add value beyond capital?",
+          "answer": "Beyond capital, we provide project planning, execution governance, compliance oversight, sales strategy, and investor reporting, ensuring disciplined project performance."
+        },
+        {
+          "question": "Is Zar Ventures involved throughout the project lifecycle?",
+          "answer": "Yes. We engage from land evaluation and feasibility through construction, sales, and monetization, ensuring end-to-end project visibility and control."
+        }
+      ]
+    },
+    {
+      "id": "collaboration-model",
+      "title": "Collaboration Model",
+      "faqs": [
+        {
+          "question": "How does Zar Ventures collaborate with developers and landowners?",
+          "answer": "We work through structured joint venture models, including equity participation, revenue sharing, and milestone-based capital deployment."
+        },
+        {
+          "question": "At which stages does Zar Ventures invest or participate?",
+          "answer": "Our participation can begin at land acquisition, approval stage, construction phase, or sales and monetization stage, depending on project needs."
+        },
+        {
+          "question": "Does Zar Ventures take operational control of projects?",
+          "answer": "We provide development management and execution oversight, while operational execution remains with the developer, ensuring aligned responsibilities."
+        },
+        {
+          "question": "How are risks managed in a collaboration?",
+          "answer": "Risks are mitigated through feasibility analysis, structured capital deployment, compliance governance, and transparent MIS reporting."
+        },
+        {
+          "question": "Are exit strategies defined upfront?",
+          "answer": "Yes. All collaborations include clearly defined exit mechanisms and timelines aligned with project cash flows and returns."
+        }
+      ]
+    },
+    {
+      "id": "channel-partner",
+      "title": "Channel Partner",
+      "faqs": [
+        {
+          "question": "Who can become a Zar Ventures Channel Partner?",
+          "answer": "Local real estate agents, consultants, freelancers, and professionals with strong regional networks across Chhattisgarh can apply."
+        },
+        {
+          "question": "Is the Channel Partner model commission-based?",
+          "answer": "Yes. The engagement is purely commission-based, with earnings linked to successful customer bookings and collections."
+        },
+        {
+          "question": "What support does Zar Ventures provide to Channel Partners?",
+          "answer": "We provide project details, marketing material, pricing, sales guidance, and ongoing coordination support."
+        },
+        {
+          "question": "Do Channel Partners represent all Zar Ventures projects?",
+          "answer": "Partners are assigned specific approved projects under collaboration based on region and suitability."
+        },
+        {
+          "question": "How are commissions calculated and paid?",
+          "answer": "Commission structures are project-specific, clearly defined, and paid transparently upon fulfillment of agreed milestones."
+        }
+      ]
+    },
+    {
+      "id": "international-realty",
+      "title": "International Realty",
+      "faqs": [
+        {
+          "question": "Does Zar Ventures offer international property options?",
+          "answer": "Yes. We assist clients with international real estate opportunities, including residential and investment properties across global markets."
+        },
+        {
+          "question": "Can Indian residents invest in international properties through Zar Ventures?",
+          "answer": "Yes. We guide Indian clients through regulatory, compliance, and documentation processes required for overseas property investments."
+        },
+        {
+          "question": "Does Zar Ventures provide end-to-end international support?",
+          "answer": "Yes. Our support includes project selection, developer coordination, documentation assistance, and transaction facilitation."
+        },
+        {
+          "question": "Are international projects vetted before being offered?",
+          "answer": "Only reputed developers and compliant projects are onboarded after due diligence and market evaluation."
+        },
+        {
+          "question": "Does Zar Ventures guarantee returns on international properties?",
+          "answer": "No. We provide advisory and facilitation services only. Investment returns depend on market performance and project execution."
+        }
+      ]
+    }
+  ]
+}
+

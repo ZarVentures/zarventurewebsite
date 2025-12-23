@@ -1,0 +1,107 @@
+{
+  "title": "Privacy Policy",
+  "effectiveDate": "[01 Jan 2026]",
+  "intro": {
+    "paragraphs": [
+      "Zar Venture Real Estate (\"we\", \"our\", \"us\") is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, submit enquiries, or use our services related to real estate transactions in India and abroad.",
+      "By accessing or using our website and services, you agree to the terms of this Privacy Policy."
+    ]
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "Information We Collect",
+      "content": "We may collect the following types of information:",
+      "subsections": [
+        {
+          "title": "Personal Information",
+          "items": [
+            "Full name",
+            "Contact details (mobile number, email address)",
+            "Residential address",
+            "PAN card details (where legally required)",
+            "Passport details (for international / Dubai property transactions)",
+            "Financial or investment preferences (budget range, property type)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "How We Use Your Information",
+      "content": "We use the collected information for the following purposes:",
+      "items": [
+        "To respond to enquiries and provide requested services",
+        "To assist with property buying, selling, leasing, and investment advisory",
+        "To comply with legal, regulatory, and compliance requirements",
+        "To process documentation and coordinate transactions",
+        "To improve our website, services, and customer experience",
+        "To send relevant updates, property options, and marketing communications (with consent)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sharing and Disclosure of Information",
+      "content": "We do not sell or rent your personal information. We may share your information only in the following cases:",
+      "items": [
+        "With trusted partners such as developers, banks, legal advisors, and registration authorities, strictly for service delivery",
+        "With government or regulatory authorities when required by law",
+        "With service providers who support our website and operations under confidentiality obligations"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Data Security",
+      "content": "We implement reasonable administrative, technical, and physical safeguards to protect your personal information against unauthorized access, misuse, alteration, or disclosure. While we strive to protect your data, no method of transmission over the internet is completely secure."
+    },
+    {
+      "id": 5,
+      "title": "Cookies Policy",
+      "content": "Our website may use cookies to:",
+      "items": [
+        "Enhance user experience",
+        "Analyse website traffic and usage patterns",
+        "Improve content and performance"
+      ],
+      "additionalContent": "You may choose to disable cookies through your browser settings; however, some features of the website may not function properly."
+    },
+    {
+      "id": 6,
+      "title": "Data Retention",
+      "content": "We retain personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or to comply with legal and regulatory obligations."
+    },
+    {
+      "id": 7,
+      "title": "Your Rights",
+      "content": "Subject to applicable laws, you have the right to:",
+      "items": [
+        "Access the personal information we hold about you",
+        "Request correction or updating of your information",
+        "Withdraw consent for marketing communications",
+        "Request deletion of your personal data, subject to legal requirements"
+      ],
+      "additionalContent": "To exercise these rights, please contact us using the details below."
+    },
+    {
+      "id": 8,
+      "title": "Third-Party Links",
+      "content": "Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of such external websites. We encourage users to review the privacy policies of those sites."
+    },
+    {
+      "id": 9,
+      "title": "Compliance with Laws",
+      "content": "We comply with applicable data protection laws, including:",
+      "items": [
+        "Information Technology Act, 2000 and related rules (India)",
+        "Applicable UAE data protection regulations (where relevant)"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Changes to This Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised effective date."
+    }
+  ],
+  "disclaimer": "This Privacy Policy is a general template and does not constitute legal advice. For complete compliance, consultation with a legal professional is recommended."
+}
+
