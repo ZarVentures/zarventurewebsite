@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // TypeScript errors should be fixed, not ignored
+  // typescript: {
+  //   ignoreBuildErrors: true,
+  // },
   images: {
-    unoptimized: true,
+    // Image optimization enabled for better performance
+    // unoptimized: true,
   },
 }
 

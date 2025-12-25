@@ -1,0 +1,30 @@
+{
+  "title": "Featured Projects",
+  "subtitle": "Explore our handpicked selection of premium properties",
+  "buttonText": "View All Properties",
+  "emptyStateMessage": "No featured properties available at this time. Check back soon!",
+  "projects": [
+    {
+      "id": "1",
+      "title": "Modern Luxury Villa",
+      "location": "Raipur, Chhattisgarh",
+      "area": "3,200 sq ft",
+      "image": "/luxury-villa-exterior.png"
+    },
+    {
+      "id": "2",
+      "title": "Contemporary Apartment",
+      "location": "Dubai, UAE",
+      "area": "2,100 sq ft",
+      "image": "/modern-apartment.png"
+    },
+    {
+      "id": "3",
+      "title": "Elegant Townhouse",
+      "location": "Raipur, Chhattisgarh",
+      "area": "4,500 sq ft",
+      "image": "/elegant-townhouse.jpg"
+    }
+  ]
+}
+

@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroBanner } from "@/components/hero-banner"
 import { FeaturedProperties } from "@/components/featured-properties"
-import { NewsEvents } from "@/components/news-events"
+// import { NewsEvents } from "@/components/news-events" // Commented out - will be activated later
 import { Testimonials } from "@/components/testimonials"
 import { Footer } from "@/components/footer"
 import homeContent from "@/data/content/home.json"
@@ -20,7 +20,7 @@ export default function HomePage() {
           paragraphs: homeContent.hero.paragraphs
         }} />
         <FeaturedProperties />
-        <NewsEvents />
+        {/* <NewsEvents /> */} {/* Commented out - will be activated later */}
         <Testimonials />
       </main>
       <Footer />

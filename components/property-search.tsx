@@ -13,8 +13,15 @@ export function PropertySearch() {
   const [status, setStatus] = useState("")
 
   const handleSearch = () => {
-    console.log("Searching:", { country, location, propertyType, status })
-    // Implement search logic here
+    // TODO: Implement search functionality
+    // For now, show message that search feature is coming soon
+    // In production, this should navigate to a search results page or filter properties
+    if (process.env.NODE_ENV === "development") {
+      // Only log in development
+      console.log("Search parameters:", { country, location, propertyType, status })
+    }
+    // Future implementation: Navigate to search results or filter current properties
+    // Example: router.push(`/properties?country=${country}&location=${location}&type=${propertyType}&status=${status}`)
   }
 
   return (

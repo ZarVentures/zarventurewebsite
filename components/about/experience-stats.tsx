@@ -44,34 +44,15 @@ export function ExperienceStats() {
   ]
 
   const [counters, setCounters] = useState<number[]>(stats.map(() => 0))
-  const [hasAnimated, setHasAnimated] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasAnimated) {
-            setHasAnimated(true)
-            animateCounters()
-          }
-        })
-      },
-      { threshold: 0.3 }
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
-      }
-    }
-  }, [hasAnimated])
+  const observerRef = useRef<IntersectionObserver | null>(null)
+  const timerRefs = useRef<NodeJS.Timeout[]>([])
+  const hasAnimatedRef = useRef(false)
 
   const animateCounters = () => {
+    if (hasAnimatedRef.current) return // Prevent multiple animations
+    hasAnimatedRef.current = true
+
     stats.forEach((stat, index) => {
       const duration = 2000 // 2 seconds
       const steps = 60
@@ -93,6 +74,8 @@ export function ExperienceStats() {
 
         if (currentStep >= steps) {
           clearInterval(timer)
+          // Remove timer from ref array
+          timerRefs.current = timerRefs.current.filter((t) => t !== timer)
           setCounters((prev) => {
             const newCounters = [...prev]
             newCounters[index] = stat.targetValue
@@ -100,8 +83,62 @@ export function ExperienceStats() {
           })
         }
       }, duration / steps)
+      
+      // Store timer reference for cleanup
+      timerRefs.current.push(timer)
     })
   }
+
+  useEffect(() => {
+    const currentRef = sectionRef.current
+    if (!currentRef) return
+
+    // Check if element is already visible on mount
+    const checkVisibility = () => {
+      const rect = currentRef.getBoundingClientRect()
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0
+      if (isVisible && !hasAnimatedRef.current) {
+        animateCounters()
+        return true
+      }
+      return false
+    }
+
+    // Check immediately (with a small delay to ensure DOM is ready)
+    const timeoutId = setTimeout(() => {
+      if (checkVisibility()) {
+        return
+      }
+
+      // Create observer if not already visible
+      observerRef.current = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !hasAnimatedRef.current) {
+              animateCounters()
+            }
+          })
+        },
+        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      )
+
+      // Observe the section
+      if (observerRef.current && currentRef) {
+        observerRef.current.observe(currentRef)
+      }
+    }, 100)
+
+    // Cleanup function
+    return () => {
+      clearTimeout(timeoutId)
+      if (observerRef.current) {
+        observerRef.current.disconnect()
+      }
+      // Cleanup all timers
+      timerRefs.current.forEach((timer) => clearInterval(timer))
+      timerRefs.current = []
+    }
+  }, [])
 
   return (
     <section ref={sectionRef} className="py-16 bg-primary/5">

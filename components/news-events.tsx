@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight } from "lucide-react"
@@ -46,8 +48,21 @@ export function NewsEvents({ items }: NewsEventsProps) {
 
   const displayItems = items || defaultItems
 
+  if (!displayItems || displayItems.length === 0) {
+    return (
+      <section id="news-events" className="py-12 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-accent">News & Events</h2>
+            <p className="text-muted-foreground">No news or events available at this time. Check back soon!</p>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   return (
-    <section className="py-12 bg-background">
+    <section id="news-events" className="py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-accent">News & Events</h2>
@@ -58,12 +73,16 @@ export function NewsEvents({ items }: NewsEventsProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {displayItems.map((item) => (
-            <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 overflow-hidden">
+            <Card key={item.id} className="overflow-hidden">
+              <div className="relative h-48 overflow-hidden shine-effect">
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover image-enhanced"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement
+                    target.src = "/placeholder.svg"
+                  }}
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
@@ -92,6 +111,12 @@ export function NewsEvents({ items }: NewsEventsProps) {
             variant="outline"
             size="lg"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+            onClick={() => {
+              // Scroll to news section on homepage
+              if (typeof window !== "undefined") {
+                window.location.href = "/#news-events"
+              }
+            }}
           >
             View All Updates
           </Button>

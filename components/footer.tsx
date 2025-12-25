@@ -10,11 +10,13 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import { CONTACT_INFO } from "@/lib/constants"
 
 export function Footer() {
   const [isWhatsAppDialogOpen, setIsWhatsAppDialogOpen] = useState(false)
-  const whatsappNumber = "917247248886"
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`
+  const [qrCodeError, setQrCodeError] = useState(false)
+  const whatsappNumber = CONTACT_INFO.whatsapp.number
+  const whatsappUrl = CONTACT_INFO.whatsapp.url
   const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(whatsappUrl)}`
 
   return (
@@ -38,21 +40,21 @@ export function Footer() {
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <Phone className="h-5 w-5 flex-shrink-0" />
-                  <a href="tel:+917247248886" className="text-base hover:text-primary transition-colors">
-                    +91 7247248886
+                  <a href={`tel:${CONTACT_INFO.phone.primary}`} className="text-base hover:text-primary transition-colors">
+                    {CONTACT_INFO.phone.display.primary}
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-5 w-5 flex-shrink-0" />
-                  <a href="tel:+917247248887" className="text-base hover:text-primary transition-colors">
-                    +91 7247248887
+                  <a href={`tel:${CONTACT_INFO.phone.secondary}`} className="text-base hover:text-primary transition-colors">
+                    {CONTACT_INFO.phone.display.secondary}
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <a href="mailto:Info.zarventures@gmail.com" className="text-base hover:text-primary transition-colors cursor-pointer underline">
-                  Info.zarventures@gmail.com
+                <a href={`mailto:${CONTACT_INFO.email}`} className="text-base hover:text-primary transition-colors cursor-pointer underline">
+                  {CONTACT_INFO.email}
                 </a>
               </div>
             </div>
@@ -63,17 +65,17 @@ export function Footer() {
             <h3 className="font-serif text-2xl font-bold mb-4">Useful Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-base hover:text-primary transition-colors">
+                <Link href="/" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-base hover:text-primary transition-colors">
+                <Link href="/#featured-properties" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-base hover:text-primary transition-colors">
+                <Link href="/contact" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Contact Us
                 </Link>
               </li>
@@ -85,17 +87,17 @@ export function Footer() {
             <h3 className="font-serif text-2xl font-bold mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-base hover:text-primary transition-colors">
+                <Link href="/privacy" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-base hover:text-primary transition-colors">
+                <Link href="/terms" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Terms and Conditions
                 </Link>
               </li>
               <li>
-                <Link href="/rera-compliance" className="text-base hover:text-primary transition-colors">
+                <Link href="/rera-compliance" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   RERA Compliance
                 </Link>
               </li>
@@ -107,22 +109,22 @@ export function Footer() {
             <h3 className="font-serif text-2xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2 mb-6">
               <li>
-                <Link href="/about" className="text-base hover:text-primary transition-colors">
+                <Link href="/about" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-base hover:text-primary transition-colors">
+                <Link href="/services" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/international-realty" className="text-base hover:text-primary transition-colors">
+                <Link href="/services/international-realty" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   International Realty
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-base hover:text-primary transition-colors">
+                <Link href="/faq" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   FAQ
                 </Link>
               </li>
@@ -130,24 +132,24 @@ export function Footer() {
 
             <h4 className="text-base font-semibold mb-3">Follow Us</h4>
             <div className="flex gap-3">
-              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Facebook">
-                <Facebook className="h-5 w-5 text-[#1877F2]" />
+              <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="Facebook">
+                <Facebook className="h-5 w-5 text-[#1877F2] icon-enhanced" />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Twitter">
-                <Twitter className="h-5 w-5 text-[#1DA1F2]" />
+              <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="Twitter">
+                <Twitter className="h-5 w-5 text-[#1DA1F2] icon-enhanced" />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
-                <Instagram className="h-5 w-5 text-[#E4405F]" />
+              <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="Instagram">
+                <Instagram className="h-5 w-5 text-[#E4405F] icon-enhanced" />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5 text-[#0077B5]" />
+              <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5 text-[#0077B5] icon-enhanced" />
               </a>
               <button
                 onClick={() => setIsWhatsAppDialogOpen(true)}
-                className="hover:opacity-80 transition-opacity"
+                className="hover:opacity-80 transition-opacity focus-enhanced"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="h-5 w-5 text-[#25D366]" />
+                <MessageCircle className="h-5 w-5 text-[#25D366] icon-enhanced" />
               </button>
             </div>
           </div>
@@ -169,14 +171,29 @@ export function Footer() {
           </DialogHeader>
           <div className="flex flex-col items-center justify-center py-4">
             <div className="bg-white p-4 rounded-lg shadow-lg mb-4">
-              <img
-                src={qrCodeUrl}
-                alt="WhatsApp QR Code"
-                className="w-64 h-64"
-              />
+              {qrCodeError ? (
+                <div className="w-64 h-64 flex flex-col items-center justify-center text-center p-4">
+                  <p className="text-sm text-muted-foreground mb-2">QR Code unavailable</p>
+                  <a 
+                    href={whatsappUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-primary hover:underline text-sm"
+                  >
+                    Click here to open WhatsApp
+                  </a>
+                </div>
+              ) : (
+                <img
+                  src={qrCodeUrl}
+                  alt="WhatsApp QR Code"
+                  className="w-64 h-64"
+                  onError={() => setQrCodeError(true)}
+                />
+              )}
             </div>
             <p className="text-sm text-muted-foreground text-center">
-              WhatsApp: +91 7247248886
+              WhatsApp: {CONTACT_INFO.phone.display.primary}
             </p>
             <p className="text-xs text-muted-foreground text-center mt-2">
               Or click{" "}

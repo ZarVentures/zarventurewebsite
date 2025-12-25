@@ -198,3 +198,181 @@
     font-weight: 400;
   }
 }
+
+@layer utilities {
+  /* Premium visual enhancements - subtle and professional */
+  
+  /* Enhanced card shadows with layered depth */
+  .card-enhanced {
+    box-shadow: 
+      0 1px 3px 0 rgba(0, 0, 0, 0.05),
+      0 4px 6px -1px rgba(0, 0, 0, 0.04),
+      0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out;
+  }
+  
+  .card-enhanced:hover {
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.08),
+      0 10px 15px -3px rgba(0, 0, 0, 0.06),
+      0 4px 8px -2px rgba(0, 0, 0, 0.04);
+    transform: translateY(-1px);
+  }
+  
+  /* Premium button enhancements */
+  .button-enhanced {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+      0 1px 2px 0 rgba(0, 0, 0, 0.05),
+      0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-enhanced:hover {
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+  }
+  
+  .button-enhanced:active {
+    transform: translateY(0);
+    box-shadow: 
+      0 1px 2px 0 rgba(0, 0, 0, 0.05),
+      0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Enhanced input fields */
+  .input-enhanced {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  }
+  
+  .input-enhanced:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-enhanced:focus {
+    box-shadow: 
+      0 0 0 3px rgba(var(--ring-rgb, 0, 0, 0), 0.1),
+      0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Section elevation */
+  .section-elevated {
+    position: relative;
+  }
+  
+  .section-elevated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(0, 0, 0, 0.05) 20%,
+      rgba(0, 0, 0, 0.05) 80%,
+      transparent
+    );
+  }
+  
+  /* Link hover enhancement */
+  .link-enhanced {
+    transition: all 0.2s ease-out;
+    position: relative;
+  }
+  
+  .link-enhanced:hover {
+    transform: translateX(2px);
+  }
+  
+  /* Navigation item enhancement */
+  .nav-item-enhanced {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+  
+  .nav-item-enhanced::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+  }
+  
+  .nav-item-enhanced:hover::after {
+    width: 80%;
+  }
+  
+  /* Icon enhancement */
+  .icon-enhanced {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .icon-enhanced:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Image enhancement */
+  .image-enhanced {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .image-enhanced:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Subtle shine effect for premium feel */
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shine-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    transition: left 0.5s ease-out;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .shine-effect:hover::before {
+    left: 100%;
+  }
+  
+  /* Enhanced focus states for accessibility */
+  .focus-enhanced:focus-visible {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 
+      0 0 0 2px var(--background),
+      0 0 0 4px var(--ring);
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Enhanced backdrop blur for modals */
+  .backdrop-enhanced {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}

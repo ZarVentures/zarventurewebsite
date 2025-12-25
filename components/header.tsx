@@ -21,7 +21,7 @@ export function Header() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "News and Events", href: "/news" },
+    { name: "News and Events", href: "/news-events" },
     { name: "Contact us", href: "/contact" },
     { name: "International Realty", href: "/services/international-realty" },
     { name: "FAQ", href: "/faq" },
@@ -49,7 +49,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-3 py-2 text-base font-medium text-header-text hover:text-header-text-hover transition-colors"
+                className="px-3 py-2 text-base font-medium text-header-text hover:text-header-text-hover transition-colors nav-item-enhanced focus-enhanced"
               >
                 {item.name}
               </Link>
@@ -62,22 +62,22 @@ export function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className="px-3 py-2 text-base font-medium text-header-text hover:text-header-text-hover transition-colors flex items-center gap-1 cursor-pointer"
+                className="px-3 py-2 text-base font-medium text-header-text hover:text-header-text-hover transition-colors flex items-center gap-1 cursor-pointer nav-item-enhanced focus-enhanced"
                 onClick={(e) => {
                   e.preventDefault()
                   setIsServicesOpen(!isServicesOpen)
                 }}
               >
                 Our Services
-                <ChevronDown className={`h-4 w-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`h-4 w-4 transition-transform icon-enhanced ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-0 w-64 bg-header-bg border border-header-text/20 rounded-lg shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-0 w-64 bg-header-bg border border-header-text/20 rounded-lg shadow-lg py-2 z-50 card-enhanced">
                   {servicesSubmenu.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="block px-4 py-2 text-base text-header-text hover:bg-header-text/10 hover:text-header-text-hover transition-colors"
+                      className="block px-4 py-2 text-base text-header-text hover:bg-header-text/10 hover:text-header-text-hover transition-colors link-enhanced focus-enhanced"
                       onClick={() => setIsServicesOpen(false)}
                     >
                       {item.name}
@@ -91,7 +91,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-3 py-2 text-base font-medium text-header-text hover:text-header-text-hover transition-colors"
+                className="px-3 py-2 text-base font-medium text-header-text hover:text-header-text-hover transition-colors nav-item-enhanced focus-enhanced"
               >
                 {item.name}
               </Link>

@@ -1,0 +1,28 @@
+{
+  "title": "What Our Clients Say",
+  "subtitle": "Trusted by hundreds of satisfied clients worldwide",
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Rakesh Verma",
+      "role": "Business Owner, Durg (C.G.)",
+      "content": "Zar Ventures understood our business requirements clearly and delivered a reliable digital solution on time. Their team was responsive, professional, and transparent throughout the project. We are completely satisfied with their service and support.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Neha Sharma",
+      "role": "Operations Manager, Raipur (C.G.)",
+      "content": "Working with Zar Ventures was a smooth and positive experience. They helped us improve our internal processes with a well-designed system. The team's commitment and post-delivery support truly stand out.",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "name": "Mohd. Imran Khan",
+      "role": "Wholesale Trader, Durg (C.G.)",
+      "content": "Zar Ventures provided us with a practical and cost-effective technology solution tailored to our needs. Their understanding of local business challenges and timely delivery impressed us. We highly recommend their services.",
+      "rating": 5
+    }
+  ]
+}
+
