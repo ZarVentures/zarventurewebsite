@@ -19,7 +19,7 @@ interface TestimonialsProps {
 
 export function Testimonials({ testimonials }: TestimonialsProps) {
   // Use testimonials from JSON file or fallback to prop
-  const displayTestimonials = testimonials || testimonialsContent.testimonials
+  const displayTestimonials: Testimonial[] = testimonials || (testimonialsContent.testimonials as Testimonial[])
 
   if (!displayTestimonials || displayTestimonials.length === 0) {
     return (
