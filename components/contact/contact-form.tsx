@@ -119,25 +119,39 @@ export function ContactForm() {
         message: sanitizeInput(formData.message),
       }
 
-      // TODO: Replace with actual API endpoint
-      // For now, simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      
-      // In production, replace with:
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(sanitizedData)
-      // })
-      // if (!response.ok) throw new Error('Submission failed')
+      // Send form data to API endpoint
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(sanitizedData)
+      })
+
+      // Check if response is ok before parsing JSON
+      if (!response.ok) {
+        let errorMessage = 'Failed to send message'
+        try {
+          const errorData = await response.json()
+          errorMessage = errorData.error || errorMessage
+        } catch (e) {
+          // If response is not JSON, use status text
+          errorMessage = response.statusText || errorMessage
+        }
+        throw new Error(errorMessage)
+      }
+
+      const result = await response.json()
+
+      if (!result.success) {
+        throw new Error(result.error || 'Failed to send message')
+      }
 
       setIsSuccess(true)
-      toast.success("Message sent successfully! We'll get back to you soon.")
+      toast.success(result.message || "Thank you for your message! We will get back to you soon.")
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
       setErrors({})
       
-      // Reset success state after 5 seconds
-      setTimeout(() => setIsSuccess(false), 5000)
+      // Reset success state after 10 seconds
+      setTimeout(() => setIsSuccess(false), 10000)
     } catch (error) {
       toast.error("Failed to send message. Please try again or contact us directly.")
       if (process.env.NODE_ENV === "development") {
@@ -165,14 +179,16 @@ export function ContactForm() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-accent">Send Us A Message</h2>
           </div>
           {isSuccess && (
-            <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-medium text-green-800 dark:text-green-200">
-                  Message sent successfully!
+            <div className="mb-6 p-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-2 border-green-300 dark:border-green-700 rounded-lg shadow-lg flex items-start gap-4 animate-in fade-in slide-in-from-top-2">
+              <div className="flex-shrink-0">
+                <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
+              </div>
+              <div className="flex-1">
+                <p className="text-base font-semibold text-green-800 dark:text-green-200 mb-1">
+                  Thank You!
                 </p>
-                <p className="text-xs text-green-700 dark:text-green-300 mt-1">
-                  We'll get back to you soon.
+                <p className="text-sm text-green-700 dark:text-green-300">
+                  Your message has been sent successfully. We will get back to you soon at <strong>{formData.email || 'your email'}</strong>.
                 </p>
               </div>
             </div>
@@ -346,7 +362,7 @@ export function ContactForm() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/917247248886"
+                href="https://wa.me/917247248887"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-12 h-12 rounded-full bg-card border border-border text-accent hover:bg-accent hover:text-primary transition-colors"

@@ -132,13 +132,25 @@ export function Footer() {
 
             <h4 className="text-base font-semibold mb-3">Follow Us</h4>
             <div className="flex gap-3">
-              <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="Facebook">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61585967627893" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity focus-enhanced" 
+                aria-label="Facebook"
+              >
                 <Facebook className="h-5 w-5 text-[#1877F2] icon-enhanced" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="Twitter">
                 <Twitter className="h-5 w-5 text-[#1DA1F2] icon-enhanced" />
               </a>
-              <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="Instagram">
+              <a 
+                href="https://www.instagram.com/zar.ventures/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity focus-enhanced" 
+                aria-label="Instagram"
+              >
                 <Instagram className="h-5 w-5 text-[#E4405F] icon-enhanced" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity focus-enhanced" aria-label="LinkedIn">
@@ -193,7 +205,7 @@ export function Footer() {
               )}
             </div>
             <p className="text-sm text-muted-foreground text-center">
-              WhatsApp: {CONTACT_INFO.phone.display.primary}
+              WhatsApp: +91 {CONTACT_INFO.whatsapp.number.slice(2)}
             </p>
             <p className="text-xs text-muted-foreground text-center mt-2">
               Or click{" "}

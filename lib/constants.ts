@@ -20,8 +20,8 @@ export const CONTACT_INFO = {
     pin: "PIN- 492001",
   },
   whatsapp: {
-    number: "917247248886",
-    url: "https://wa.me/917247248886",
+    number: "917247248887",
+    url: "https://wa.me/917247248887",
   },
 } as const
 

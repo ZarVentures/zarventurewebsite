@@ -26,7 +26,7 @@ export function FeaturedProperties({ properties }: FeaturedPropertiesProps) {
       <section id="featured-projects" className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-accent">{featuredProjectsContent.title}</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-accent text-sharp">{featuredProjectsContent.title}</h2>
             <p className="text-muted-foreground">{featuredProjectsContent.emptyStateMessage}</p>
           </div>
         </div>

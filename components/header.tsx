@@ -28,18 +28,27 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-header-text/20 bg-header-bg backdrop-blur supports-[backdrop-filter]:bg-header-bg/95">
+    <header className="sticky top-0 z-50 w-full border-b border-header-text/20 bg-header-bg backdrop-blur-md supports-[backdrop-filter]:bg-header-bg/95 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <Image
-              src="/images/whatsapp-20image-202025-12-10-20at-207.jpeg"
-              alt="Zar Ventures Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10 object-contain"
-            />
+            <div className="h-10 w-10 bg-header-bg flex items-center justify-center overflow-hidden">
+              <Image
+                src="/images/whatsapp-20image-202025-12-10-20at-207.jpeg"
+                alt="Zar Ventures Logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+                style={{ 
+                  mixBlendMode: 'normal',
+                  filter: 'none',
+                  border: 'none',
+                  outline: 'none',
+                  boxShadow: 'none'
+                }}
+              />
+            </div>
             <span className="font-serif text-2xl font-bold text-header-text">Zar Ventures</span>
           </Link>
 

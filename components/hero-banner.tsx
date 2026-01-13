@@ -33,7 +33,7 @@ export function HeroBanner({ data }: HeroBannerProps) {
     <section className="relative py-12 md:py-16 flex items-center justify-center bg-gradient-to-b from-primary/10 to-background">
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-accent mb-6 text-balance">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-accent mb-6 text-balance text-sharp">
           {content.title}
         </h1>
         <div className="text-lg md:text-xl text-foreground/90 mb-8 max-w-3xl mx-auto space-y-4 text-pretty">

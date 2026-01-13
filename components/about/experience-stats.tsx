@@ -143,7 +143,7 @@ export function ExperienceStats() {
   return (
     <section ref={sectionRef} className="py-16 bg-primary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-accent text-center mb-4">
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-accent text-center mb-4 text-sharp">
           Our Journey of Excellence
         </h2>
         <p className="text-center text-foreground/80 mb-12 max-w-2xl mx-auto">
@@ -151,14 +151,14 @@ export function ExperienceStats() {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={stat.label} className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-                <stat.icon className="w-10 h-10 text-accent" />
+            <div key={stat.label} className="flex flex-col items-center text-center section-glow">
+              <div className="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center mb-4 shadow-lg border border-accent/20">
+                <stat.icon className="w-10 h-10 text-accent icon-enhanced" />
               </div>
-              <div className="font-serif text-5xl font-bold text-accent mb-2">
+              <div className="font-serif text-5xl font-bold text-accent mb-2 text-sharp drop-shadow-sm">
                 {counters[index]}{stat.suffix}
               </div>
-              <div className="font-semibold text-xl text-foreground mb-1">{stat.label}</div>
+              <div className="font-semibold text-xl text-foreground mb-1 text-sharp">{stat.label}</div>
               <p className="text-sm text-foreground/70">{stat.description}</p>
             </div>
           ))}

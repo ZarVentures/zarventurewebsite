@@ -2,7 +2,6 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CompanyIntro } from "@/components/about/company-intro"
 import { MissionVisionValues } from "@/components/about/mission-vision-values"
-import { TeamProfiles } from "@/components/about/team-profiles"
 import { ExperienceStats } from "@/components/about/experience-stats"
 
 export default function AboutPage() {
@@ -13,7 +12,6 @@ export default function AboutPage() {
         <CompanyIntro />
         <MissionVisionValues />
         <ExperienceStats />
-        <TeamProfiles />
       </main>
       <Footer />
     </div>
