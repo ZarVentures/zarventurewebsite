@@ -42,6 +42,17 @@ This email was sent from the contact form on zarventures.com
 Reply to: ${email}
     `.trim()
 
+    // Send data to Google Sheets via Google Apps Script
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycby_b5Bh0I4Bn4-JbZyaC9NOLPMN_FRtG81sFJhVwclkUIUM5XHbKxh-Mr-jAs1NDwHP/exec', {
+        method: 'POST',
+        redirect: 'follow',
+        body: JSON.stringify({ name, email, phone, subject, message })
+      })
+    } catch (gsError) {
+      console.log('Google Sheets submission note:', gsError)
+    }
+
     // Send email using Nodemailer with Gmail SMTP
     let nodemailer
     try {

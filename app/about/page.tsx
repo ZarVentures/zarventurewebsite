@@ -6,7 +6,7 @@ import { ExperienceStats } from "@/components/about/experience-stats"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-[#f8fafc]">
       <Header />
       <main className="flex-1">
         <CompanyIntro />

@@ -114,7 +114,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
+                <Link href="/services/core-competencies" className="text-base hover:text-primary transition-colors link-enhanced focus-enhanced">
                   Our Services
                 </Link>
               </li>

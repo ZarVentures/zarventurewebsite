@@ -4,7 +4,7 @@ import contactContent from "@/data/content/contact.json"
 export function OfficeLocations() {
   const offices = contactContent.officeLocations.offices
   return (
-    <section className="py-8 bg-background">
+    <section className="py-16 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-accent">{contactContent.officeLocations.title}</h2>

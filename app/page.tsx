@@ -9,7 +9,7 @@ import homeContent from "@/data/content/home.json"
 export default function HomePage() {
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#f8fafc]">
       <Header />
       <main className="flex-1">
         <HeroBanner data={{

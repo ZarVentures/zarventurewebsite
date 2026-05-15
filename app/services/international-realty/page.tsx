@@ -1,7 +1,20 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
-import { CheckCircle2, Home, TrendingUp, Key, Building2, BarChart3, FileCheck, Shield, Users, Target, Award } from "lucide-react"
+import {
+  CheckCircle2,
+  Home,
+  TrendingUp,
+  Key,
+  Building2,
+  BarChart3,
+  FileCheck,
+  Shield,
+  Users,
+  Target,
+  Award,
+} from "lucide-react"
+
 import internationalRealtyContent from "@/data/content/international-realty.json"
 import { getIcon } from "@/lib/icon-map"
 
@@ -12,6 +25,7 @@ export const metadata = {
 
 export default function InternationalRealtyPage() {
   const content = internationalRealtyContent
+
   const serviceIcons: Record<string, typeof Home> = {
     "Buying assistance": Home,
     "Selling services": TrendingUp,
@@ -22,137 +36,203 @@ export default function InternationalRealtyPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#f8fafc]">
       <Header />
+
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="py-8 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-6">
-              <h1 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-accent">
+        {/* HERO SECTION */}
+        <section className="relative overflow-hidden py-24">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800" />
+
+          <div className="absolute top-0 left-0 w-72 h-72 bg-cyan-500/20 blur-3xl rounded-full" />
+          <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-600/20 blur-3xl rounded-full" />
+
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto text-center">
+              <span className="inline-flex items-center px-4 py-1 rounded-full bg-white/10 border border-white/20 text-white text-sm mb-6">
+                Global Real Estate Solutions
+              </span>
+
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                 {content.title}
               </h1>
-              <div className="mb-4">
-                <h2 className="text-xl md:text-2xl font-serif font-semibold text-foreground mb-2">
-                  {content.subtitle}
-                </h2>
-                <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-3 leading-relaxed">
-                  {content.description}
-                </p>
-                <div className="flex flex-wrap justify-center gap-2 text-sm text-accent font-semibold">
-                  {content.highlights.map((highlight, index) => (
-                    <span key={index} className="px-3 py-1 bg-accent/10 rounded-full">
-                      {highlight}
-                    </span>
-                  ))}
-                </div>
+
+              <h2 className="text-2xl md:text-3xl text-cyan-300 font-semibold mb-6">
+                {content.subtitle}
+              </h2>
+
+              <p className="text-slate-300 text-lg max-w-3xl mx-auto leading-relaxed mb-10">
+                {content.description}
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-3 mb-12">
+                {content.highlights.map((highlight, index) => (
+                  <span
+                    key={index}
+                    className="px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white text-sm"
+                  >
+                    {highlight}
+                  </span>
+                ))}
               </div>
-            </div>
-            <div className="max-w-5xl mx-auto">
-              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-xl mb-4">
-                <Image 
-                  src={content.heroImage} 
-                  alt="International Realty" 
-                  fill 
-                  className="object-cover object-center" 
+
+              <div className="relative h-[350px] md:h-[550px] rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                <Image
+                  src={content.heroImage}
+                  alt="International Realty"
+                  fill
                   priority
+                  className="object-cover object-top"
                 />
-              </div>
-              <div className="bg-card rounded-lg border border-border shadow-lg p-6">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-foreground/80">
-                  {content.services.map((service, index) => {
-                    const ServiceIcon = serviceIcons[service] || Home
-                    return (
-                      <div key={index} className="flex items-center gap-2">
-                        <ServiceIcon className="w-4 h-4 text-accent" />
-                        <span>{service}</span>
-                      </div>
-                    )
-                  })}
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                <div className="absolute bottom-8 left-8 text-left">
+                  <h3 className="text-3xl font-bold text-white">
+                    Premium International Properties
+                  </h3>
+
+                  <p className="text-slate-300 mt-3 max-w-lg">
+                    Helping investors and homeowners secure the finest global real estate opportunities.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Your Trusted Partner Section */}
-        <section className="py-8 bg-background">
+        {/* SERVICES OVERVIEW */}
+        <section className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-6">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-accent">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {content.services.map((service, index) => {
+                const ServiceIcon = serviceIcons[service] || Home
+
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-3xl p-6 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                  >
+                    <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-5">
+                      <ServiceIcon className="w-7 h-7 text-blue-600" />
+                    </div>
+
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                      {service}
+                    </h3>
+
+                    <p className="text-slate-600">
+                      Premium real estate solutions tailored for international investors and property owners.
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* TRUSTED PARTNER */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <span className="text-blue-600 font-semibold uppercase tracking-wider">
+                Why Zar Ventures
+              </span>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
                 {content.trustedPartner.title}
               </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+
+              <p className="text-lg text-slate-600 leading-relaxed">
                 {content.trustedPartner.description}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Services Sections */}
-        <section className="py-8 bg-background">
+        {/* SERVICE SECTIONS */}
+        <section className="py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto space-y-4">
-              {content.serviceSections.map((section) => {
+            <div className="space-y-24">
+              {content.serviceSections.map((section, index) => {
                 const IconComponent = getIcon(section.icon)
-                const isImageLeft = section.imagePosition === "left"
-                
+
+                const reverse = index % 2 !== 0
+
                 return (
-                  <div key={section.id} className="bg-card rounded-lg border border-border shadow-lg overflow-hidden">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {isImageLeft && (
-                        <div className="relative h-full min-h-[180px] order-2 md:order-1">
-                          <Image 
-                            src={section.image} 
-                            alt={section.title} 
-                            fill 
-                            className="object-cover" 
-                          />
-                        </div>
-                      )}
-                      <div className={`p-4 ${isImageLeft ? 'order-1 md:order-2' : ''}`}>
-                        <div className="flex items-center gap-2 mb-2">
-                          <div className="p-1.5 bg-accent/10 rounded-lg">
-                            <IconComponent className="w-4 h-4 text-accent" />
+                  <div
+                    key={section.id}
+                    className="grid lg:grid-cols-2 gap-12 items-center"
+                  >
+                    {/* IMAGE */}
+                    <div className={`${reverse ? "lg:order-2" : ""}`}>
+                      <div className="relative h-[350px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
+                        <Image
+                          src={section.image}
+                          alt={section.title}
+                          fill
+                          className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                        />
+
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                        <div className="absolute bottom-8 left-8">
+                          <div className="flex items-center gap-4">
+                            <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20">
+                              <IconComponent className="w-7 h-7 text-white" />
+                            </div>
+
+                            <div>
+                              <h3 className="text-3xl font-bold text-white">
+                                {section.title}
+                              </h3>
+
+                              <p className="text-slate-300 mt-2">
+                                {section.tagline}
+                              </p>
+                            </div>
                           </div>
-                          <h3 className="text-lg font-serif font-bold text-foreground">
-                            {section.title}
-                          </h3>
                         </div>
-                        <p className="text-foreground/70 mb-2 text-xs italic">
-                          {section.tagline}
-                        </p>
-                        <p className="text-foreground/80 mb-2 text-xs">
+                      </div>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className={`${reverse ? "lg:order-1" : ""}`}>
+                      <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-200">
+                        <p className="text-slate-600 leading-relaxed mb-8">
                           {section.description}
                         </p>
-                        <p className="text-foreground/70 mb-1.5 text-xs font-semibold">Our services include:</p>
-                        <ul className="space-y-1 text-foreground/80 text-xs mb-3">
+
+                        <h4 className="text-xl font-bold text-slate-900 mb-5">
+                          Our Services Include
+                        </h4>
+
+                        <ul className="space-y-4 mb-10">
                           {section.items.map((item, index) => (
-                            <li key={index} className="flex items-start gap-1.5">
-                              <CheckCircle2 className="w-3 h-3 text-accent mt-0.5 flex-shrink-0" />
-                              <span>{item}</span>
+                            <li
+                              key={index}
+                              className="flex items-start gap-4"
+                            >
+                              <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+
+                              <span className="text-slate-700 leading-relaxed">
+                                {item}
+                              </span>
                             </li>
                           ))}
                         </ul>
-                        <p className="text-foreground/70 mb-1.5 text-xs font-semibold">Why choose us:</p>
-                        <div className="flex flex-wrap gap-1.5 text-xs text-accent">
+
+                        <div className="flex flex-wrap gap-3">
                           {section.benefits.map((benefit, index) => (
-                            <span key={index} className="px-2 py-0.5 bg-accent/10 rounded">
-                              ✔ {benefit}
+                            <span
+                              key={index}
+                              className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 font-medium"
+                            >
+                              {benefit}
                             </span>
                           ))}
                         </div>
                       </div>
-                      {!isImageLeft && (
-                        <div className="relative h-full min-h-[180px]">
-                          <Image 
-                            src={section.image} 
-                            alt={section.title} 
-                            fill 
-                            className="object-cover" 
-                          />
-                        </div>
-                      )}
                     </div>
                   </div>
                 )
@@ -161,68 +241,84 @@ export default function InternationalRealtyPage() {
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
-        <section className="py-8 bg-background">
+        {/* WHY CHOOSE US */}
+        <section className="py-24 bg-slate-950">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-6">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-accent">
-                  {content.whyChooseUs.title}
-                </h2>
-              </div>
-              <div className="grid md:grid-cols-2 gap-3">
-                {content.whyChooseUs.items.slice(0, 4).map((item, index) => {
-                  const icons = [Users, Shield, Target, Award]
-                  const IconComponent = icons[index] || CheckCircle2
-                  return (
-                    <div key={index} className="flex items-start gap-2 p-3 bg-card rounded-lg border border-border">
-                      <IconComponent className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-foreground/80">{item}</span>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                {content.whyChooseUs.title}
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {content.whyChooseUs.items.map((item, index) => {
+                const icons = [Users, Shield, Target, Award]
+                const IconComponent = icons[index % 4]
+
+                return (
+                  <div
+                    key={index}
+                    className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8"
+                  >
+                    <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
+                      <IconComponent className="w-7 h-7 text-cyan-300" />
                     </div>
-                  )
-                })}
-                <div className="flex items-start gap-2 p-3 bg-card rounded-lg border border-border md:col-span-2">
-                  <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-foreground/80">{content.whyChooseUs.items[4]}</span>
-                </div>
-              </div>
+
+                    <p className="text-slate-300 leading-relaxed">
+                      {item}
+                    </p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>
 
-        {/* How the Investment Process Works */}
-        <section className="py-8 bg-background">
+        {/* INVESTMENT PROCESS */}
+        <section className="py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-6">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold mb-3 text-accent">
-                  {content.investmentProcess.title}
-                </h2>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-3">
-                {content.investmentProcess.steps.map((step) => {
-                  const StepIcon = getIcon(step.icon)
-                  return (
-                    <div key={step.number} className="bg-card rounded-lg border border-border shadow-lg p-4 text-center">
-                      <div className="flex justify-center mb-2">
-                        <div className="p-2 bg-accent/10 rounded-full">
-                          <StepIcon className="w-5 h-5 text-accent" />
-                        </div>
-                      </div>
-                      <div className="text-xl font-bold text-accent mb-1">{step.number}</div>
-                      <h3 className="font-semibold text-sm text-foreground mb-1">{step.title}</h3>
-                      <p className="text-xs text-foreground/80">
-                        {step.description}
-                      </p>
+            <div className="text-center mb-20">
+              <span className="text-blue-600 uppercase tracking-wider font-semibold">
+                Investment Journey
+              </span>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
+                {content.investmentProcess.title}
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+              {content.investmentProcess.steps.map((step) => {
+                const StepIcon = getIcon(step.icon)
+
+                return (
+                  <div
+                    key={step.number}
+                    className="relative bg-white rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                  >
+                    <div className="absolute -top-4 left-6 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+                      {step.number}
                     </div>
-                  )
-                })}
-              </div>
+
+                    <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 mt-4">
+                      <StepIcon className="w-8 h-8 text-blue-600" />
+                    </div>
+
+                    <h3 className="text-xl font-bold text-slate-900 mb-4">
+                      {step.title}
+                    </h3>
+
+                    <p className="text-slate-600 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>
-
       </main>
+
       <Footer />
     </div>
   )

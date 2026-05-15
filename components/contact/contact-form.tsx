@@ -133,7 +133,6 @@ export function ContactForm() {
           const errorData = await response.json()
           errorMessage = errorData.error || errorMessage
         } catch (e) {
-          // If response is not JSON, use status text
           errorMessage = response.statusText || errorMessage
         }
         throw new Error(errorMessage)
@@ -172,7 +171,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-8 bg-background">
+    <section className="py-16 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-6">

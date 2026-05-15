@@ -13,30 +13,51 @@ export default function CoreCompetenciesPage() {
   const content = coreCompetenciesContent
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#f8fafc]">
       <Header />
+
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-accent">
+        {/* HERO SECTION */}
+        <section className="relative overflow-hidden py-24">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800" />
+
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 h-72 w-72 rounded-full bg-blue-500 blur-3xl" />
+            <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-cyan-400 blur-3xl" />
+          </div>
+
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto text-center">
+              <span className="inline-block px-4 py-1 rounded-full bg-white/10 border border-white/20 text-white text-sm mb-6">
+                Enterprise Excellence
+              </span>
+
+              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
                 {content.title}
               </h1>
-            </div>
-            <div className="max-w-5xl mx-auto">
-              <div className="relative h-56 md:h-72 rounded-lg overflow-hidden shadow-xl mb-6">
-                <Image 
-                  src={content.heroImage} 
-                  alt="Zar Ventures Office" 
-                  fill 
-                  className="object-cover" 
+
+              <p className="text-slate-300 text-lg max-w-3xl mx-auto leading-relaxed mb-12">
+                {content.companyOverview.description}
+              </p>
+
+              <div className="relative h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                <Image
+                  src={content.heroImage}
+                  alt="Zar Ventures"
+                  fill
+                  priority
+                  className="object-cover object-top"
                 />
-              </div>
-              <div className="text-center">
-                <div className="bg-white border border-gray-200 rounded-lg p-6 max-w-3xl mx-auto">
-                  <p className="text-gray-700 text-base leading-relaxed">
-                    {content.companyOverview.description}
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+                <div className="absolute bottom-8 left-8 text-left">
+                  <h2 className="text-white text-2xl font-semibold">
+                    Driving Innovation & Excellence
+                  </h2>
+
+                  <p className="text-slate-300 mt-2">
+                    Transforming businesses with modern enterprise solutions
                   </p>
                 </div>
               </div>
@@ -44,55 +65,102 @@ export default function CoreCompetenciesPage() {
           </div>
         </section>
 
-        {/* Core Competencies Sections */}
-        <section className="py-16 bg-background">
+        {/* CORE COMPETENCIES */}
+        <section className="py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto space-y-6">
-              {content.sections.map((section) => {
+            <div className="text-center mb-20">
+              <span className="text-blue-600 font-semibold tracking-wide uppercase">
+                What We Do
+              </span>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
+                Our Core Competencies
+              </h2>
+
+              <div className="w-24 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
+            </div>
+
+            <div className="space-y-20">
+              {content.sections.map((section, index) => {
                 const IconComponent = getIcon(section.icon)
-                const isImageLeft = section.imagePosition === "left"
-                
+
+                const isEven = index % 2 === 0
+
                 return (
-                  <div key={section.id} className="bg-card rounded-lg border border-border shadow-lg overflow-hidden">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {isImageLeft && (
-                        <div className="relative h-full min-h-[200px] order-2 md:order-1">
-                          <Image 
-                            src={section.image} 
-                            alt={section.title} 
-                            fill 
-                            className="object-cover" 
-                          />
-                        </div>
-                      )}
-                      <div className={`p-5 ${isImageLeft ? 'order-1 md:order-2' : ''}`}>
-                        <div className="flex items-center gap-3 mb-3">
-                          <div className="p-2 bg-accent/10 rounded-lg">
-                            <IconComponent className="w-5 h-5 text-accent" />
+                  <div
+                    key={section.id}
+                    className={`grid lg:grid-cols-2 gap-10 items-center ${
+                      !isEven ? "lg:flex-row-reverse" : ""
+                    }`}
+                  >
+                    {/* IMAGE */}
+                    <div
+                      className={`relative group ${
+                        !isEven ? "lg:order-2" : ""
+                      }`}
+                    >
+                      <div className="relative h-[350px] md:h-[450px] overflow-hidden rounded-3xl shadow-2xl">
+                        <Image
+                          src={section.image}
+                          alt={section.title}
+                          fill
+                          className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                        />
+
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                        <div className="absolute bottom-6 left-6">
+                          <div className="flex items-center gap-3">
+                            <div className="p-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/20">
+                              <IconComponent className="w-6 h-6 text-white" />
+                            </div>
+
+                            <h3 className="text-2xl font-bold text-white">
+                              {section.title}
+                            </h3>
                           </div>
-                          <h3 className="text-xl font-serif font-bold text-foreground">
-                            {section.title}
-                          </h3>
                         </div>
-                        <ul className="space-y-2 text-sm text-foreground/80">
-                          {section.items.map((item, index) => (
-                            <li key={index} className="flex items-start gap-2">
-                              <span className="text-accent mt-1">•</span>
-                              <span>{item}</span>
+                      </div>
+                    </div>
+
+                    {/* CONTENT */}
+                    <div
+                      className={`${
+                        !isEven ? "lg:order-1" : ""
+                      }`}
+                    >
+                      <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-200 hover:shadow-2xl transition-all duration-500">
+                        <div className="flex items-center gap-4 mb-8">
+                          <div className="p-4 rounded-2xl bg-blue-50">
+                            <IconComponent className="w-8 h-8 text-blue-600" />
+                          </div>
+
+                          <div>
+                            <p className="text-sm text-slate-500 uppercase tracking-widest">
+                              Expertise
+                            </p>
+
+                            <h3 className="text-3xl font-bold text-slate-900">
+                              {section.title}
+                            </h3>
+                          </div>
+                        </div>
+
+                        <ul className="space-y-5">
+                          {section.items.map((item, idx) => (
+                            <li
+                              key={idx}
+                              className="flex items-start gap-4 group"
+                            >
+                              <div className="mt-1 h-3 w-3 rounded-full bg-blue-600 group-hover:scale-125 transition-transform" />
+
+                              <span className="text-slate-700 leading-relaxed text-lg">
+                                {item}
+                              </span>
                             </li>
                           ))}
                         </ul>
                       </div>
-                      {!isImageLeft && (
-                        <div className="relative h-full min-h-[200px]">
-                          <Image 
-                            src={section.image} 
-                            alt={section.title} 
-                            fill 
-                            className="object-cover" 
-                          />
-                        </div>
-                      )}
                     </div>
                   </div>
                 )
@@ -100,8 +168,8 @@ export default function CoreCompetenciesPage() {
             </div>
           </div>
         </section>
-
       </main>
+
       <Footer />
     </div>
   )
